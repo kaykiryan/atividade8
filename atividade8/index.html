@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    primeiro numero <br />
+    <input id="n1" type="number"  /><br  /><br  />
+    segundo numero <br />
+    <input id="n2" type="number"  /><br  /><br  />
+    <button onclick="somar  ()">somar</button>
+    <button onclick="subtrair ()">subtrair</button>
+    <button onclick="multiplicar ()">multiplicar</button>
+    <button onclick="dividir ()">dividir</button>
+
+    o resultado e <span></span> <br />
+
+    <script >
+var num1 =Number(prompt ("digite seu saldo "))
+var num2 = Number(prompt (" digite o valor do produto") )
+const calcularsoma =  soma ()
+function soma (){
+    if(num1<num2){
+        return alert ("saldo insuficiente")
+    }
+    var res = num1 - num2
+    alert ("seu resultado e "+res)
+   
+}
+   
+   
+        let num7 = prompt ("informe o primeiro nummero ")
+   let num5 = prompt ("informe o segundo numero")
+   let num3 = prompt ("informeo terceiro numero ")
+   let num4 = prompt ("informe o quarto numero ")
+   let soma2 = Number(num7)+  Number(num5)+  Number(num3) +  Number(num4)
+   alert("seu resultado é " + soma2)
+   alert ("informe novamente mais 4 numeros ")
+   let num8 = prompt ("informe o primeiro nummero ")
+   let num6 = prompt ("informe o segundo numero")
+   let num9 = prompt ("informeo terceiro numero ")
+   let num10 = prompt ("informe o quarto numero ")
+   var resultado = num8 + num6 +num9 + num10 /4
+   alert ("sua media é, " + resultado)
+   var quantidadeDeNumeros = prompt ("Informe a quantidade de números a serem informados")
+   console.log(quantidadeDeNumeros)
+
+   var soma3 = 0
+
+for(var i = 0; i < Number(quantidadeDeNumeros); i++) {
+
+var numeroInformado = prompt("Informe o número")
+soma3 = soma3 + Number(numeroInformado)
+
+
+}
+
+alert("A soma é " + soma3)
+alert("A média é " + soma3 / quantidadeDeNumeros) 
+ 
+
+
+   var n1 = document.querySelector('#n1')
+   var n2 = document.querySelector('#n2')
+   var resultado = document.querySelector('span')
+
+   function somar () {
+
+       var N1 = Number(n1.value)
+       var N2 = Number(n2.value)
+       resultado.innerHTML = N1 + N2
+    }
+
+    function subtrair () {
+
+var N1 = Number(n1.value)
+var N2 = Number(n2.value)
+resultado.innerHTML = N1 - N2
+}
+
+    function multiplicar () {
+
+var N1 = Number(n1.value)
+var N2 = Number(n2.value)
+resultado.innerHTML = N1 * N2
+}
+
+function dividir () {
+
+var N1 = Number(n1.value)
+var N2 = Number(n2.value)
+resultado.innerHTML = N1 / N2
+}
+  
+ var num15 = Number(prompt("Primeiro valor"))
+ var num13 = Number(prompt("Segundo valor"))
+
+ var soma5 = 0;
+ for(var i = num15; i <= num13; i++){
+    if( i%2 != 0){
+         soma5 +=i;
+     }
+ }
+ alert(`a soma é ${soma5}`) 
+    </script>
+    
+    
+</body>
+</html>
